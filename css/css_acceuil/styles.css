@@ -1,3 +1,245 @@
-img {
-    width: 10em;
+@font-face {
+    font-family: 'Shrikhand';
+    src: url('/fonts/shrikhand/Shrikhand-Regular.otf');
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    body {
+        font-family: 'roboto';
+    }
+
+    /* header */
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1.5em;
+        padding-bottom: 1em;
+        box-shadow: 1px 1px 4px;
+    }
+
+    header img {
+        width: 11em;
+    }
+
+
+    /* localisation */
+    .title_localization {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #e6e6e6b7;
+        gap: 1em;
+        margin-top: 3px;
+        font-size: 1em;
+        padding: 1em 0em 1em 0em;
+
+    }
+
+    .title_localization p {
+        padding: 0em;
+        margin: 0em;
+    }
+
+    .section_introduction {
+        background-color: #e6e6e652;
+        padding: 3em 2em 3em 2em;
+        text-align: center;
+    }
+
+    .section_introduction h1 {
+        margin: 0em;
+        font-size: 1.8em;
+
+    }
+
+    .section_introduction p {
+        font-size: 1.2em;
+    }
+
+    main img {
+        width: 10em;
+    }
+
+    .explore_another_restaurant {
+        background: linear-gradient(180deg, #FF79DA 0.4%, #9356DC 99.6%);
+        color: white;
+        padding: 1em 1.5em 1em 1.5em;
+        margin: 1em;
+        border-radius: 5em;
+        border: 0em;
+    }
+
+    .section_list_category {
+        margin: 1em;
+    }
+
+    /* button */
+    .container_button_category {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .button_category {
+        display: flex;
+        justify-content: flex-start;
+
+        gap: 2em;
+        width: 100%;
+        margin: 0.8em 0.5em 0.8em 0.5em;
+        padding: 1.5em 2em 1.5em 2em;
+        border-radius: 10px;
+        border: 0px;
+        box-shadow: 4px 4px 8px rgba(150, 150, 150, 0.541);
+
+    }
+
+    .number_button_overlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 1em;
+        width: 1em;
+        padding: 8px;
+        color: white;
+        background-color: #9356DC;
+        border-radius: 5em;
+        font-size: 10px;
+        position: absolute;
+        left: 10px;
+
+    }
+
+    .button_category i {
+        font-size: 1.3em;
+        color: #5e5d5d;
+    }
+
+    .button_category:hover {
+        color: #9356DC;
+        background-color: #9256dc1a;
+    }
+
+    .button_category:hover .text_button_category {
+        color: #000000;
+    }
+
+    a {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    /* main  */
+    main {
+        padding: 1em;
+        background-color: #f2f2f2;
+    }
+
+    /* article restaurant  */
+    .card_restaurant {
+        background-color: white;
+        box-shadow: 0px 1px 10px rgba(56, 56, 56, 0.15);
+        border-radius: 1em 1em 1em 1em;
+        border-radius: 1em;
+        margin: 1em 0em 1em 0em;
+
+    }
+
+    .card_restaurant img {
+        object-fit: cover;
+        position: center;
+        width: 100%;
+        height: 180px;
+        border-radius: 1em 1em 0em 0em;
+
+    }
+
+    .card_restaurant p {
+        padding: 0em;
+        margin: 0em;
+    }
+
+    .card_restaurant h3 {
+        padding: 0em;
+        margin: 0em;
+    }
+
+    .card_body_restaurant {
+        margin: 0.5em;
+        margin-top: 0em;
+        padding: 0.5em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+   
+    .overlay_new {
+        background-color: rgb(153, 226, 208);
+        box-shadow: 9px 3px 10px rgba(56, 56, 56, 0.719);
+        color: rgb(19, 146, 115);
+        position: absolute;
+        font-weight: bold;
+        top: 15%;
+        left: 85%;
+        padding: 6px;
+        font-size: 0.8em;
+        border-radius: 3px;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .card_restaurant_image_new {
+        position: relative;
+        text-align: center;
+
+    }
+    /* icon */
+    .fa-heart:hover::before{
+        background-color: #9356DC;
+       
+    }
+    /* footer */
+
+    footer {
+        margin: 0em;
+        background-color: rgb(53, 53, 53);
+        padding: 1em 0em 3em 0em;
+    }
+
+    footer ul {
+        list-style: none;
+        color: white;
+        padding-left: 2em;
+    }
+
+
+    footer h2 {
+        width: 8em;
+        padding: 0em 0em 1em 0em;
+        margin: 0em;
+        font-family: 'Shrikhand';
+        font-size: 1.3em;
+        font-weight: 100;
+        color: white;
+    }
+
+
+    footer a {
+        text-align: left;
+        display: flex;
+        gap: 4px;
+        color: white;
+    }
+
+
 }

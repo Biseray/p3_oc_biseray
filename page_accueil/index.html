@@ -5,64 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oh my food</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/css_acceuil/styles.css">
+    <title>Ohmyfood</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/css_acceuil/styles.css">
 </head>
 
 <body>
     <header>
-        <img src="images/logo/ohmyfood.png" alt="oh my food">
+        <img src="/images/logo/ohmyfood.png" alt="oh my food">
     </header>
     <div class="title_localization">
         <i class="fa-solid fa-location-dot"></i>
         <p>Paris, belleville</p>
     </div>
-    <section class="section_">
+    <section class="section_introduction">
         <h1>Réservez le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exception, <br />
+        <p>Découvrez des restaurants d'exception,
             sélectionnés par nos soins
         </p>
         <input type="button" class="explore_another_restaurant" value="Explorer nos restaurants">
     </section>
     <section class="section_list_category">
         <h2>Fonctionnement</h2>
-        <button class="button_category">
-            <i class="fa-solid fa-mobile-screen-button"></i>Choisissez votre menu
-        </button>
-        <button class="button_category">
-            <i class="fa-sharp fa-solid fa-list"></i>Composez votre menu
-        </button>
-        <button class="button_category">
-            <i class="fa-solid fa-store"></i>Dégustez au restaurant
-        </button>
+
+        <div class="container_button_category">
+            <i class="fa-solid fa-1 number_button_overlay"></i>
+            <button class="button_category">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <span class="text_button_category">Choisissez votre menu</span>
+            </button>
+        </div>
+        <div class="container_button_category">
+            <i class="fa-solid fa-2 number_button_overlay"></i>
+            <button class="button_category">
+                <i class="fa-sharp fa-solid fa-list"></i>
+                <span class="text_button_category">Composez votre menu</span>
+            </button>
+        </div>
+        <div class="container_button_category">
+            <i class="fa-solid fa-3 number_button_overlay"></i>
+            <button class="button_category">
+                <i class="fa-solid fa-store"></i>
+                <span class="text_button_category"> Dégustez au restaurant </span>
+            </button>
+        </div>
     </section>
     <main>
         <h2>Restaurants</h2>
         <a href="">
             <article class="card_restaurant">
-                <img src="images/restaurants/la-palette-du-goût.jpg"
-                    alt="la palette du gout restaurant paris ménilmontant">
-                <div class="new">
-                    <p>Nouveau</p>
+                <div class="card_restaurant_image_new">
+                    <img src="/images/restaurants/la-palette-du-goût.jpg"
+                        alt="la palette du gout restaurant paris ménilmontant">
+                    <div class="overlay_new">
+                        <p>Nouveau</p>
+                    </div>
                 </div>
                 <div class="card_body_restaurant">
-                    <h3>La palette du goût</h3>
-                    <p>ménilmontant</p>
-                </div>
-                <i class="fa-regular fa-heart"></i>
-            </article>
-        </a>
-        <a href="">
-            <article class="card_restaurant">
-                <img src="images/restaurants/la-note-enchantee.jpg" alt="la note enchantee charonne">
-                <div class="new">
-                    <p>Nouveau</p>
-                </div>
-                <div class="card_body_restaurant">
-                    <div class="card_title_body-restaurant">
-                        <h3>La note enchantée</h3>
-                        <p>Charonne</p>
+                    <div class="card_body_restaurant_description">
+                        <h3>La palette du goût</h3>
+                        <p>ménilmontant</p>
                     </div>
                     <i class="fa-regular fa-heart"></i>
                 </div>
@@ -70,7 +72,25 @@
         </a>
         <a href="">
             <article class="card_restaurant">
-                <img src="images/restaurants/a-la-francaise.jpg" alt="a la française cite rouge">
+                <div class="card_restaurant_image_new">
+                    <img src="/images/restaurants/la-note-enchantee.jpg" alt="la note enchantee charonne">
+                    <div class="overlay_new">
+                        <p>Nouveau</p>
+                    </div>
+                </div>
+                <div class="card_body_restaurant">
+                    <div class="card_title_body-restaurant">
+                        <h3>La note enchantée</h3>
+                        <p>Charonne</p>
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                    
+                </div>
+            </article>
+        </a>
+        <a href="">
+            <article class="card_restaurant">
+                <img src="/images/restaurants/a-la-francaise.jpg" alt="a la française cite rouge">
                 <div class="card_body_restaurant">
                     <div class="card_title_body-restaurant">
                         <h3>À la française </h3>
@@ -82,13 +102,13 @@
         </a>
         <a href="">
             <article class="card_restaurant">
-                <img src="images/restaurants/le-delice-des-sens.jpg" alt="le delice des sens">
+                <img src="/images/restaurants/le-delice-des-sens.jpg" alt="le delice des sens">
                 <div class="card_body_restaurant">
                     <div class="card_title_body-restaurant">
                         <h3>Le délice des sens</h3>
                         <p>Folie-Méricourt</p>
                     </div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-heart icon_heart_favorite"></i>
                 </div>
             </article>
         </a>
@@ -97,7 +117,9 @@
         <ul>
             <li>
                 <a href="">
-                    <img src="images/logo/ohmyfood@2x.svg" alt="logo oh my food">
+                    <h2>
+                        ohmyfood
+                    </h2>
                 </a>
             </li>
             <li>
