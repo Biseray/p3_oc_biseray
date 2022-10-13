@@ -1,0 +1,265 @@
+@font-face {
+    font-family: 'Shrikhand';
+    src: url('/fonts/shrikhand/Shrikhand-Regular.otf');
+
+}
+
+:root{
+    --primaire-color: #9356DC;
+    --secondaire-color:#FF79DA;
+    --tertiaire-color:#99E2D0;
+}
+
+
+body {
+    font-family: 'roboto';
+}
+
+/* header */
+
+header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0em 0.5em 0em;
+    box-shadow: #5e5d5d56 1px 1px 10px;
+    
+
+}
+header i {
+    position: absolute;
+    left: 5%;
+    top: 35%;
+    font-size: 1.4em;
+}
+
+header h1 {
+    margin: 0%;
+    font-family: 'Shrikhand';
+    font-weight: 200;
+    font-size: 2em;
+}
+
+/* image background */
+.background_image{
+    z-index: 1;
+    position: relative
+}
+.image_background_introduction {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    margin-bottom: -0.2em;
+}
+
+
+
+main {
+    z-index:  3; 
+    position: relative;
+    background-color: white;
+    border-radius: 2.5em 2.5em 0em 0em;
+    margin-top: -2em;
+    padding: 1em 1em 2em 1em;
+    background-color: #f2f2f2;
+}
+
+main h1 {
+    margin: 0em;
+    font-family: 'Shrikhand';
+    font-size: 1.5em;
+}
+
+main h2 {
+    margin: 1em 0em 0em 0em;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    margin: 1em 0em 0.2em 0em;
+    color: rgb(90, 90, 90);
+    font-weight: 500;
+
+}
+
+.underline_title{
+    width: 1.8em;
+    text-align: left;
+    margin: 0em;
+    border: var(--tertiaire-color) 1px solid;
+}
+
+.title_page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1em 1em 1em 0em;
+}
+.title_page i {
+    font-size: 1.5em;
+}
+
+/* list card entree */
+.list_card_entree{
+    padding: 0.5em 0em 0.5em 0em;
+}
+.card_description{
+    margin-left: 1px;
+}
+.card_price {
+    font-weight: bold;
+    margin-right: 0.8em;
+}
+
+/* card entree  */
+
+.card_entree {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0.7em;
+    margin: 1em 0em 1em 0em;
+    border-radius: 1em;
+    box-shadow: 2px 2px 8px rgba(150, 150, 150, 0.541);
+}
+
+.card_entree p {
+    margin: 0em;
+    font-size: 0.8em;
+    
+}
+
+.card_entree h3 {
+    margin: 0em;
+    padding: 4px 0px 4px 0px;
+    font-size: 1em;
+}
+
+
+/* list second course  */
+.list_card_second_course{
+    padding: 0.5em 0em 0.5em 0em;
+    
+}
+/* second course  */
+.card_second_course {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0.7em;
+    margin: 1em 0em 1em 0em;
+    border-radius: 0.9em;
+    box-shadow: 2px 2px 8px rgba(150, 150, 150, 0.541);
+}
+
+.card_second_course p {
+    margin: 0em;
+    font-size: 0.8em;
+}
+
+.card_second_course h3 {
+    margin: 0em;
+    padding: 4px 0px 4px 0px;
+    font-size: 1em;
+}
+
+/* list dessert */
+.list_card_desserts{
+    padding: 0.5em 0em 0.5em 0em;
+}
+/* desserts */
+.card_desserts {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0.7em;
+    margin: 1em 0em 1em 0em;
+    border-radius: 1em;
+    box-shadow: 2px 2px 8px rgba(150, 150, 150, 0.541);
+}
+
+.card_desserts p {
+    margin: 0em;
+    font-size: 0.8em;
+}
+
+.card_desserts h3 {
+    margin: 0em;
+    padding: 4px 0px 4px 0px;
+    font-size: 1em;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.button_order {
+    background: linear-gradient(180deg, var(--secondaire-color) 0.4%, var(--primaire-color) 99.6%);
+    box-shadow: 4px 4px 8px rgba(150, 150, 150, 0.541);
+    color: white;
+    padding: 1em 2em 1em 2em;
+    margin: 1em;
+    border-radius: 5em;
+    border: 0em;
+    width: 12em;
+}
+
+.position_button_order {
+    text-align: center;
+    margin: 1em;
+}
+
+/* footer */
+
+
+footer {
+    z-index: 1;
+    margin: 0em;
+    background-color: rgb(53, 53, 53);
+    padding: 0.5em 0em 3em 0em;
+}
+
+footer ul {
+    list-style: none;
+    color: white;
+    padding-left: 1.5em;
+    margin: 0.5em 0Em 0em 0em;
+}
+
+
+footer h2 {
+    width: 8em;
+    padding: 0em 0em 1em 0em;
+    margin: 0em;
+    font-family: 'Shrikhand';
+    font-size: 1.3em;
+    font-weight: 100;
+    color: white;
+}
+
+footer li {
+    padding: 0.3em 0em 0.3em 0em ;
+    font-size: 0.8em;
+}
+
+footer a {
+    text-align: left;
+    display: flex;
+    gap: 4px;
+    color: white;
+}
+
+.footer_align-items{
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+}
+
+.fa-handshake-angle{
+    font-size: 0.7em;
+}

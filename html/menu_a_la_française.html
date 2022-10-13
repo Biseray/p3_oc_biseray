@@ -7,47 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oh my food </title>
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/css_menu/styles.css">
+    <link rel="stylesheet" href="/css/menu_page.css">
 
 </head>
 
 <body>
     <header>
-        <i class="fa-solid fa-arrow-left"></i>
-        <img src="/images/logo/ohmyfood.png" alt="logo oh my food">
+        <a href="/index.html">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <h1> ohmyfood</h1>
     </header>
-    <div class="image_background_introduction"></div>
+    <div class="background_image">
+        <img class="image_background_introduction" src="/images/restaurants/a-la-francaise.jpg"
+            alt="a la française restaurant paris belleville">
+    </div>
     <main>
-
         <div class="title_page">
             <h1>À la française</h1>
             <i class="fa-regular fa-heart"></i>
         </div>
         <section class="list_card_entree">
-            <h2> Entrées </h2>
-            <a href="">
+            <h2 class="border_"> Entrées </h2>
+            <div class="underline_title"> </div>
                 <article class="card_entree">
                     <div class="card_description">
                         <h3>Tartare de poulpe acidulé</h3>
                         <p>Aux zestes d'orange</p>
                     </div>
-                    <div class="price">
+                    <div class="card_price">
                         <p>25€</p>
                     </div>
                 </article>
-            </a>
-            <a href="">
                 <article class="card_entree">
                     <div class="card_description">
                         <h3>Velouté de légumes d'antan</h3>
                         <p>Carotte, panais, topinambour</p>
                     </div>
-                    <div class="price">
+                    <div class="card_price">
                         <p>35€</p>
                     </div>
                 </article>
-            </a>
-            <a href="">
                 <article class="card_entree">
                     <div class="card_description">
                         <h3>Soupe à l'oignon</h3>
@@ -57,47 +57,41 @@
                         <p>20€</p>
                     </div>
                 </article>
-            </a>
         </section>
         <section class="list_card_second_course">
             <h2> Plats </h2>
-            <a href="">
-                <article class="card_second_course">
-                    <div class="card_description">
-                        <h3>Coquilles Saint-Jacques</h3>
-                        <p>Accompagnées d'une purée de panais</p>
-                    </div>
-                    <div class="card_price">
-                        <p>40€</p>
-                    </div>
-                </article>
-            </a>
-            <a href="">
-                <article class="card_second_course">
-                    <div class="card_description">
-                        <h3>Magret de canard</h3>
-                        <p>Et parmentier de pommes de terre</p>
-                    </div>
-                    <div class="card_price">
-                        <p>35€</p>
-                    </div>
-                </article>
-            </a>
-            <a href="">
-                <article class="card_second_course">
-                    <div class="card_description">
-                        <h3>Pigeonneau d’Ille-et-Vilaine</h3>
-                        <p>Sur son lit de gnocchis aux légumes</p>
-                    </div>
-                    <div class="card_price">
-                        <p>42€</p>
-                    </div>
-                </article>
-            </a>
+            <div class="underline_title"> </div>
+            <article class="card_second_course">
+                <div class="card_description">
+                    <h3>Coquilles Saint-Jacques</h3>
+                    <p>Accompagnées d'une purée de panais</p>
+                </div>
+                <div class="card_price">
+                    <p>40€</p>
+                </div>
+            </article>
+            <article class="card_second_course">
+                <div class="card_description">
+                    <h3>Magret de canard</h3>
+                    <p>Et parmentier de pommes de terre</p>
+                </div>
+                <div class="card_price">
+                    <p>35€</p>
+                </div>
+            </article>
+            <article class="card_second_course">
+                <div class="card_description">
+                    <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                    <p>Sur son lit de gnocchis aux légumes</p>
+                </div>
+                <div class="card_price">
+                    <p>42€</p>
+                </div>
+            </article>
         </section>
         <section class="list_card_desserts">
             <h2> Desserts </h2>
-            <a href="">
+            <div class="underline_title"> </div>
                 <article class="card_desserts">
                     <div class="card_description">
                         <h3>Pétales de violettes glacés</h3>
@@ -107,8 +101,6 @@
                         <p>18€</p>
                     </div>
                 </article>
-            </a>
-            <a href="">
                 <article class="card_desserts">
                     <div class="card_description">
                         <h3>Fondant au chocolat</h3>
@@ -118,8 +110,6 @@
                         <p>22€</p>
                     </div>
                 </article>
-            </a>
-            <a href="">
                 <article class="card_desserts">
                     <div class="card_description">
                         <h3>Millefeuille croustillant</h3>
@@ -129,7 +119,6 @@
                         <p>23€</p>
                     </div>
                 </article>
-            </a>
         </section>
         <div class="position_button_order">
             <input type="button" class="button_order" value="Commander">
@@ -146,12 +135,16 @@
             </li>
             <li>
                 <a href="#">
-                    <i class="fa-solid fa-utensils"></i> Proposer un restaurant
+                    <div class="footer_align-items">
+                        <i class="fa-solid fa-utensils"></i> Proposer un restaurant
+                    </div>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <i class="fa-solid fa-handshake-angle"></i> Devenir partenaire
+                    <div class="footer_align-items">
+                        <i class="fa-solid fa-handshake-angle"></i> Devenir partenaire
+                    </div>
                 </a>
             </li>
             <li>
@@ -160,7 +153,7 @@
                 </a>
             </li>
             <li>
-                <a href="mailto">
+                <a href="mailto:ohmyfood@gmail.com">
                     Contact
                 </a>
             </li>
