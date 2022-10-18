@@ -283,26 +283,31 @@ main h2 {
 /* -------------------------------------------card menu --------------------------------------- */
 /* ---------------------------------------------------------------------------------------------- */
 
+
 .card_menu {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     background-color: white;
-    padding: 0.7em;
+    padding: 0em;
     margin: 1em 0em 1em 0em;
     border-radius: 1em;
     box-shadow: 2px 2px 8px rgba(150, 150, 150, 0.541);
     animation: menu 4s forwards  ;
+    overflow: hidden;
        
 }
 
 .card_description {
     margin-left: 1px;
+    padding: 0.7rem;
+    overflow: hidden;
 }
 
 .card_price {
     font-weight: bold;
-    margin-right: 0.8em;
+    padding: 0rem;
+    padding-top:1.3em ; 
 }
 
 .card_menu p {
@@ -312,11 +317,52 @@ main h2 {
 
 .card_menu h3 {
     margin: 0em;
-    padding: 4px 0px 4px 0px;
+    padding-bottom: 0.3em;
     font-size: 1em;
 }
+.menu_check {
+    margin-right: -4.4em;
+    padding: 1em 1em 1em 1em ;
+    height: 100%;
+    background-color: var(--tertiaire-color);
+    color: white;
+    font-size: 1.2em;
+    transition: margin-right 700ms ;
+}
+.card_menu:hover .menu_check{
+    margin: 0em;
+    
+  
+}
+.card_menu:hover .menu_price_check{
+    gap:0.6em;
+    
+  
+}
+.menu_price_check
+{
+    align-items: center;
+   display: flex;
+    gap: 2em;
+    flex-flow: row;
+    transition: gap 2s ;  
+}
+.menu_price_check i{
+    
+    transition: all 800ms ;
+}
+.card_menu:hover .menu_price_check i {
+    transform: rotate(360deg)
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* ----------------------------keyframes checks -------------------------------- */
+/* ------------------------------------------------------------------------------------ */
 
 
+@keyframes spincheck {
+    
+}
 .card_menu:nth-child(3)
 {
     animation-delay:100ms;
