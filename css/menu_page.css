@@ -295,24 +295,27 @@ main h2 {
     box-shadow: 2px 2px 8px rgba(150, 150, 150, 0.541);
     animation: menu 4s forwards  ;
     overflow: hidden;
-       
 }
 
 .card_description {
     margin-left: 1px;
     padding: 0.7rem;
     overflow: hidden;
+    white-space: nowrap;
+
 }
 
 .card_price {
     font-weight: bold;
     padding: 0rem;
-    padding-top:1.3em ; 
+    padding-top:1.4em ; 
 }
 
 .card_menu p {
     margin: 0em;
     font-size: 0.8em;
+ 
+    
 }
 
 .card_menu h3 {
@@ -321,8 +324,8 @@ main h2 {
     font-size: 1em;
 }
 .menu_check {
-    margin-right: -4.4em;
-    padding: 1em 1em 1em 1em ;
+    margin-right: -3em;
+    padding: 1em  ;
     height: 100%;
     background-color: var(--tertiaire-color);
     color: white;
@@ -335,7 +338,7 @@ main h2 {
   
 }
 .card_menu:hover .menu_price_check{
-    gap:0.6em;
+    gap:0.5em;
     
   
 }
@@ -343,7 +346,7 @@ main h2 {
 {
     align-items: center;
    display: flex;
-    gap: 2em;
+    gap: 1em;
     flex-flow: row;
     transition: gap 2s ;  
 }
