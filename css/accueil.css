@@ -412,26 +412,31 @@ article .fa-heart {
 /* --------------------------------------------------------------------------------- */
 
 footer {
+    
     margin: 0em;
     background-color: rgb(53, 53, 53);
-    padding: 1em 0em 3em 0em;
+    padding: 0.5em 0em 3em 0em;
 }
 
 footer ul {
     list-style: none;
     color: white;
     padding-left: 1.5em;
+    margin: 0.5em 0Em 0em 0em;
 }
 
 
 footer h2 {
     width: 8em;
-    padding: 0em 0em 1em 0em;
+    padding: 0em;
     margin: 0em;
     font-family: 'Shrikhand';
     font-size: 1.3em;
     font-weight: 100;
     color: white;
+    padding-left: 1em;
+    padding-top: 1em;
+
 }
 
 footer li {
@@ -455,6 +460,7 @@ footer a {
 .fa-handshake-angle {
     font-size: 0.7em;
 }
+
 
 @media screen and (min-width:991px) {
 
