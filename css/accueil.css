@@ -11,7 +11,7 @@
 }
 
 body {
-    font-family: 'roboto';
+    font-family: 'roboto', sans-serif;
 }
 
 a {
@@ -277,6 +277,9 @@ header h1 {
 .button_category i {
     font-size: 1.3em;
     color: #5e5d5d;
+}
+.text_button_category{
+    color: #000000;
 }
 
 .button_category:hover {
