@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Shrikhand';
-    src: url('/fonts/shrikhand/Shrikhand-Regular.otf');
+    src: url('../fonts/shrikhand/Shrikhand-Regular.otf');
 
 }
 
@@ -14,31 +14,16 @@
 body {
     font-family: 'roboto';
 }
+
 a {
     color: #000000;
     text-decoration: none;
 }
+
 /* ---------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------loader------------------------------------------------ */
 /* ---------------------------------------------------------------------------------------------- */
-.position-loader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-}
 
-.loader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    inset: 0;
-    height: 100vh;
-    background-image: linear-gradient(to top, var(--secondaire-color),rgb(12, 12, 12),var(--primaire-color));
-    opacity: 1;
-    animation: backgroundloader 4s forwards;
-}
 
 /*---------------------- bar loader   ------------------------------- */
 /* ----------------------------bar middle */
@@ -87,51 +72,6 @@ a {
 }
 
 /* ----------------------------------keyframes loader and bar -------------------------------------------------- */
-@keyframes size {
-    0% {
-        transform: scaleY(0.2);
-        opacity: 0.7;
-
-    }
-
-    50% {
-        transform: scaleY(1);
-        opacity: 1;
-
-    }
-
-    100% {
-        transform: scaleY(0.2);
-        opacity: 0.7;
-
-
-    }
-
-}
-
-@keyframes backgroundloader {
-
-    0% {
-        z-index: 6;
-        opacity: 1;
-    }
-
-    30% {
-        opacity: 0.9;
-    }
-
-
-
-    99% {
-        z-index: 6;
-    }
-
-    100% {
-        z-index: -1;
-        opacity: 0;
-
-    }
-}
 
 
 /* ---------------------------------------------------------------------------------------------- */
@@ -217,6 +157,7 @@ main h2 {
 }
 
 .title_page {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -230,11 +171,12 @@ main h2 {
 .title_page i {
     position: absolute;
     transform: translate(-50%);
-    right: 1.5rem;
+    right: -1rem;
     font-size: 1.3em;
 
 
 }
+
 .far {
     opacity: 1;
     transition: opacity 1s;
@@ -293,67 +235,80 @@ main h2 {
     margin: 1em 0em 1em 0em;
     border-radius: 1em;
     box-shadow: 2px 2px 8px rgba(150, 150, 150, 0.541);
-    animation: menu 4s forwards  ;
+    animation: menu 2s forwards;
     overflow: hidden;
+
 }
 
 .card_description {
     margin-left: 1px;
     padding: 0.7rem;
-    overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap;
+    overflow: hidden;
 
 }
 
 .card_price {
     font-weight: bold;
     padding: 0rem;
-    padding-top:1.4em ; 
+    padding-top: 1.4em;
 }
 
 .card_menu p {
     margin: 0em;
     font-size: 0.8em;
- 
-    
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+
 }
 
 .card_menu h3 {
     margin: 0em;
     padding-bottom: 0.3em;
     font-size: 1em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
+
 .menu_check {
     margin-right: -3em;
-    padding: 1em  ;
+    padding: 1em;
     height: 100%;
     background-color: var(--tertiaire-color);
     color: white;
     font-size: 1.2em;
-    transition: margin-right 700ms ;
+    transition: margin-right 700ms;
 }
-.card_menu:hover .menu_check{
+
+.card_menu:hover .menu_check {
     margin: 0em;
-    
-  
+
+
 }
-.card_menu:hover .menu_price_check{
-    gap:0.5em;
-    
-  
+
+.card_menu:hover .menu_price_check {
+    gap: 0.5em;
+
+
 }
-.menu_price_check
-{
+
+.menu_price_check {
     align-items: center;
-   display: flex;
+    display: flex;
     gap: 1em;
     flex-flow: row;
-    transition: gap 2s ;  
+    transition: gap 1ms;
 }
-.menu_price_check i{
-    
-    transition: all 800ms ;
+
+.menu_price_check i {
+
+    transition: all 800ms;
 }
+
 .card_menu:hover .menu_price_check i {
     transform: rotate(360deg)
 }
@@ -362,51 +317,49 @@ main h2 {
 /* ----------------------------keyframes checks -------------------------------- */
 /* ------------------------------------------------------------------------------------ */
 
-
-@keyframes spincheck {
-    
-}
-.card_menu:nth-child(3)
-{
-    animation-delay:100ms;
-}
-.card_menu:nth-child(4)
-{
-    animation-delay:200ms;
+.card_menu:nth-child(3) {
+    animation-delay: 100ms;
 }
 
-.card_menu:nth-child(5)
-{
-    animation-delay:300ms;
+.card_menu:nth-child(4) {
+    animation-delay: 200ms;
 }
 
-.card_menu:nth-child(6)
-{
-    animation-delay:400ms;
+.card_menu:nth-child(5) {
+    animation-delay: 300ms;
 }
+
+.card_menu:nth-child(6) {
+    animation-delay: 400ms;
+}
+
 /* -------------------------------------------------------------------------------------------- */
 /* -----------------------------keyframes animation menu ------------------------------------- */
 
-@keyframes menu  {
-    0% { 
-        
-        transform: scale(0) ;
-        
+@keyframes menu {
+    0% {
+
+        transform: scale(0);
+
     }
-    50%{
+
+    20% {
         transform: scale(0);
     }
-    100%{
-        transform: scale(1) ;
-        
+
+
+    100% {
+        transform: scale(1);
+
     }
 }
+
 /* ------------------------------------------------------------------------------------------ */
 /* -------------------------------------button order---------------------------------------- */
 .button_order {
-    transition-property: background-image, box-shadow;
-    transition: all 800ms;
-    background-image: linear-gradient(349deg, var(--primaire-color), var(--secondaire-color));
+
+    transition: all 1s ease-out;
+    background-image: linear-gradient(350deg, var(--primaire-color)60%, var(--secondaire-color));
     box-shadow: 2px 2px 10px rgba(56, 56, 56, 0.719);
     background-size: 150%;
     color: white;
@@ -416,14 +369,16 @@ main h2 {
     border: 0em;
     width: 12em;
 }
+
 .position_button_order {
     text-align: center;
     margin: 1em;
 }
+
 /* -------------------------------------transition hover button ---------------------------------------- */
 .button_order:hover {
-    background-position: 100% 10%;
-    box-shadow: 3px 4px 10px rgba(56, 56, 56, 0.719);
+    background-image: linear-gradient(350deg, var(--primaire-color) 40%, var(--secondaire-color));
+    box-shadow: 3px 4px 5px rgba(56, 56, 56, 0.719);
 }
 
 
@@ -433,7 +388,7 @@ main h2 {
 
 
 footer {
-    z-index: 1;
+    
     margin: 0em;
     background-color: rgb(53, 53, 53);
     padding: 0.5em 0em 3em 0em;
@@ -449,12 +404,15 @@ footer ul {
 
 footer h2 {
     width: 8em;
-    padding: 0em 0em 1em 0em;
+    padding: 0em;
     margin: 0em;
     font-family: 'Shrikhand';
     font-size: 1.3em;
     font-weight: 100;
     color: white;
+    padding-left: 1em;
+    padding-top: 1em;
+
 }
 
 footer li {
@@ -477,4 +435,131 @@ footer a {
 
 .fa-handshake-angle {
     font-size: 0.7em;
+}
+
+@media screen and (min-width:991px) {
+    .list_section_menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1em;
+        padding-top: 2em;
+        padding-bottom: 3em;
+        
+
+    }
+
+    main {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -2em;
+        padding: 1em 1em 4em 1em;
+        width: 950px;
+        
+        border-radius: 2.5em 2.5em 0em 0em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        
+    }
+
+    .title_page {
+        margin-left: 1em;
+    }
+
+    .image_background_introduction {
+        width: 980px;
+        display: flex;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0em;
+    }
+
+    header .fa-arrow-left {
+        position: absolute;
+        left: 20%;
+        top: 35%;
+        font-size: 1.4em;
+    }
+
+    footer h2 {
+        padding: 1em 0em 0.5em 0em;
+        text-align: center;
+    }
+
+    footer ul {
+        display: flex;
+        margin: 0em;
+        background-color: rgb(53, 53, 53);
+        padding: 0.5em 0em 2em 0em;
+        gap: 4em;
+    }
+
+    footer {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+
+
+
+}
+
+@media (min-width:767px) and (max-width:990px) {
+
+    footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0em;
+    }
+
+    footer h2 {
+        padding: 1em 0em 0.5em 0em;
+        text-align: center;
+    }
+
+    footer ul {
+        display: flex;
+        z-index: 1;
+        margin: 0em;
+        background-color: rgb(53, 53, 53);
+        padding: 0.5em 0em 2em 0em;
+        gap: 1em;
+    }
+
+
+    main {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        margin-top: 3em;
+        border-radius: 2.5em 2.5em 0em 0em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -2em;
+    }
+
+    .list_section_menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 1em;
+        margin-left: 10%;
+
+    }
+
+    .title_page {
+        margin: 1em 10% 1em 10%;
+    }
+
 }
