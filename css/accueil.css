@@ -25,7 +25,7 @@ a {
 /* ----------------------------------------------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------------------------------------------- */
 
-.position-loader {
+.position_loader_bars {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +38,7 @@ a {
     align-items: center;
     position: fixed;
     inset: 0;
-    height: 100vh;
+    height: 100%;
     background-image: linear-gradient(to top, var(--secondaire-color), rgb(12, 12, 12), var(--primaire-color));
     opacity: 1;
     animation: backgroundloader 3s forwards;
@@ -357,6 +357,7 @@ main h2 {
     align-items: center;
     justify-content: space-between;
 }
+
 /* overlay new restaurant  */
 .overlay_new {
     background-color: var(--tertiaire-color);
@@ -392,6 +393,7 @@ article .fa-heart {
     right: 1.5rem;
     font-size: 1.3em;
 }
+
 /* heart background (none)  */
 .far {
     opacity: 1;
@@ -402,6 +404,7 @@ article .fa-heart {
     opacity: 0;
 
 }
+
 /* heart background purple  */
 .fas {
     transition: opacity 1s;
@@ -629,7 +632,7 @@ footer a {
         z-index: 1;
         margin: 0em;
         background-color: rgb(53, 53, 53);
-        padding: 0.5em 0em 2em 0em;
+        padding: 0.5em 0em 3em 0em;
         gap: 1em;
     }
 }

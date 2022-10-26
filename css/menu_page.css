@@ -121,7 +121,7 @@ main h2 {
 
 .far {
     opacity: 1;
-    transition: opacity 1s;
+    transition: opacity 100ms;
 }
 
 .far:hover {
@@ -177,7 +177,8 @@ main h2 {
     box-shadow: 2px 2px 8px rgba(150, 150, 150, 0.541);
     animation: menu 2s forwards;
     overflow: hidden;
-
+    transform: scale(0);
+    
 }
 
 
@@ -190,10 +191,7 @@ main h2 {
         transform: scale(0);
     }
 
-    20% {
-        transform: scale(0);
-    }
-
+    
 
     100% {
         transform: scale(1);
@@ -237,8 +235,6 @@ main h2 {
 .card_description {
     margin-left: 1px;
     padding: 0.7rem;
-    text-overflow: ellipsis;
-    white-space: nowrap;
     overflow: hidden;
 
 }
@@ -272,7 +268,6 @@ main h2 {
 .card_menu:hover .menu_check {
     margin: 0em;
 
-
 }
 
 .menu_price_check {
@@ -288,7 +283,7 @@ main h2 {
 }
 
 .menu_price_check i {
-
+    width: 1em;
     transition: transform 800ms;
 }
 
@@ -483,25 +478,26 @@ footer a {
     main {
         margin-left: auto;
         margin-right: auto;
-        width: 90%;
-        margin-top: 3em;
+        margin-top: -2em;
         border-radius: 2.5em 2.5em 0em 0em;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: -2em;
     }
 
     .list_section_menu {
         display: flex;
         flex-direction: row;
-        justify-content: start;
+        justify-content: space-around;
         flex-wrap: wrap;
-        gap: 1em;
-        margin-left: 10px;
+        
+        
 
     }
-
+    .image_background_introduction{
+        height: 350px;
+    }
+    
     .card_menu {
         width: 350px;
     }
@@ -525,7 +521,7 @@ footer a {
         z-index: 1;
         margin: 0em;
         background-color: rgb(53, 53, 53);
-        padding: 0.5em 0em 2em 0em;
+        padding: 0.5em 0em 3em 0em;
         gap: 1em;
     }
 
