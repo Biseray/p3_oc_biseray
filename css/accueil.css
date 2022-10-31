@@ -159,9 +159,11 @@ header {
 
 }
 
-header h1 {
-    margin: 0em;
+.logo_title{
+    margin: 0%;
     font-family: 'Shrikhand';
+    font-weight: 200;
+    font-size: 2em;
 }
 
 
@@ -193,7 +195,7 @@ header h1 {
     text-align: center;
 }
 
-.section_introduction h2 {
+.section_introduction h1 {
     margin: 0em;
     padding: 0em 1em 0em 1em;
     font-size: 1.5em;
@@ -486,7 +488,7 @@ footer a {
     main {
         margin-left: auto;
         margin-right: auto;
-        width: 950px;
+        width: 1300px;
         margin-bottom: 0em;
 
         border-radius: 2.5em 2.5em 0em 0em;
@@ -502,7 +504,7 @@ footer a {
         flex-wrap: wrap;
         justify-content: center;
         gap: 2em;
-        width: 950px;
+        width: 1300px;
     }
 
     .card_restaurant {
@@ -511,7 +513,7 @@ footer a {
 
     /* -------------sections steps ------------- */
     .section_list_steps {
-        width: 950px;
+        width: 1300px;
         margin: auto;
     }
 
@@ -520,7 +522,7 @@ footer a {
         display: flex;
         justify-content: center;
         gap: 0.5em;
-        width: 280px;
+        width: 400px;
     }
 
     .list_button_steps_position {
