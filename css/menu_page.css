@@ -148,9 +148,7 @@ main h2 {
 
 .list_card_entree {
     padding: 0.5em 0em 0.5em 0em;
-    animation: menu 2s forwards;
-    
- 
+    animation: menu 2s forwards 0s;
     transform: scale(0);
 }
 
@@ -159,7 +157,6 @@ main h2 {
 .list_card_second_course {
     padding: 0.5em 0em 0.5em 0em;
     animation: menu 2s forwards 1s;
-    
     transform: scale(0);
 
 }
