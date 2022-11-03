@@ -428,7 +428,7 @@ footer a {
 /* ------------------------------------------------------------------------------------------*/
 /* ---------------------------------------------------------------------------------------- */
 @media screen and (min-width:991px) {
-
+   
     /* -----------header ----------- */
     header .fa-arrow-left {
         position: absolute;
@@ -438,24 +438,24 @@ footer a {
     }
 
     .image_background_introduction {
-        width: 1330px;
+       
+       max-width: 1300px;
         display: flex;
         height: 500px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto;
         margin-top: 0em;
     }
 
     /* ----------main---------- */
     main {
+        margin: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
         margin-top: -2em;
         padding: 1em 1em 4em 1em;
-        width: 1300px;
+        max-width: 1270px ;
+        
         border-radius: 2.5em 2.5em 0em 0em;
 
     }
@@ -466,14 +466,19 @@ footer a {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 1em;
         padding-top: 2em;
+        gap:1em;
         padding-bottom: 3em;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
 
     }
 
     .card_menu {
-        width: 400px;
+            
+        width: 300px;
+        min-width: 200px;
 
     }
 
